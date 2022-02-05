@@ -1,12 +1,9 @@
-name: Node CI
+name: Team awesome's approval workflow
 
 on: [push]
 
 jobs:
-      - uses: actions/upload-artifact@master
-    needs: build
-          name: webpack artifacts
-          path: public/
+  build:
 
     runs-on: ubuntu-latest
 
